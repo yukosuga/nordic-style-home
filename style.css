@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 4rem;
+  font-family: "Text Me One", sans-serif;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 15vw 1fr 15vw;
+  grid-template-rows: 100px 1fr 300px 50px;
+  grid-template-areas:
+    "header header header"
+    ". main ."
+    "section section section"
+    "footer footer footer";
+}
+
+/* header */
+header {
+  width: 100%;
+  position: fixed;
+  padding: 0.5rem;
+  grid-area: header;
+  background-color: #e3e8ec;
+}
+
+header div {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header span:nth-child(1) {
+  color: #897c92;
+}
+
+header span:nth-child(2) {
+  color: #848389;
+}
+
+header span:nth-child(3) {
+  color: #697d97;
+}
+
+h1 {
+  font-family: "Gayathri", sans-serif;
+  font-size: 6rem;
+  font-weight: 300;
+}
+
+nav a {
+  text-decoration: none;
+  color: #575757;
+}
+
+nav a:hover {
+  color: black;
+}
+
+/* main */
+main {
+  grid-area: main;
+  background-color: #f6f1ed;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(7, 220px);
+
+  gap: 5px;
+  padding: 10px;
+}
+
+main div {
+  background-size: cover;
+}
+
+.img1 {
+  background-image: url(./img/kitchen-items.jpg);
+  grid-area: 1 / 1 / 3 / 3;
+}
+
+.img2 {
+  background-image: url(./img/lamp.jpg);
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.img3 {
+  background-image: url(./img/clock.jpg);
+  grid-area: 1 / 4 / 2 / 6;
+  background-position: top;
+}
+
+.img4 {
+  background-image: url(./img/sink.jpg);
+  grid-area: 2 / 3 / 3 / 6;
+  background-position-y: 25%;
+}
+
+.img5 {
+  background-image: url(./img/poster.jpg);
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.img6 {
+  background-image: url(./img/kitchen.jpg);
+  grid-area: 4 / 1 / 6 / 2;
+}
+
+.img7 {
+  background-image: url(./img/bathroom.jpg);
+  grid-area: 3 / 2 / 6 / 4;
+}
+
+.img8 {
+  background-image: url(./img/baby.jpg);
+  grid-area: 3 / 4 / 5 / 6;
+}
+
+.img9 {
+  background-image: url(./img/book.jpg);
+  grid-area: 5 / 4 / 6 / 6;
+  background-position: center;
+}
+
+.img10 {
+  background-image: url(./img/bedroom.jpg);
+  grid-area: 6 / 1 / 8 / 3;
+  background-position: right;
+}
+
+.img11 {
+  background-image: url(./img/living-room.jpg);
+  grid-area: 6 / 3 / 8 / 6;
+  background-position: center;
+}
+
+/* section */
+section {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  grid-area: section;
+  background-color: #e3e8ec;
+}
+
+.sec-container {
+  height: 300px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1rem;
+  width: 70%;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "item1 . item2 ."
+    ". item3 . item4"
+    "item5 . item6 .";
+}
+
+.sec-container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.sec-container div:hover,
+.sec-container div:hover a {
+  color: black;
+  cursor: pointer;
+  background-color: #f6f3f0;
+}
+
+.sec-container a {
+  text-decoration: none;
+  font-size: 3rem;
+  color: #575757;
+}
+
+.item1 {
+  grid-area: item1;
+}
+
+.item2 {
+  grid-area: item2;
+}
+
+.item3 {
+  grid-area: item3;
+}
+
+.item4 {
+  grid-area: item4;
+}
+
+.item5 {
+  grid-area: item5;
+}
+
+.item6 {
+  grid-area: item6;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #f6f1ed;
+  padding: 0 2rem;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+footer div:nth-of-type(2) {
+  font-family: "Gayathri", sans-serif;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.sns img {
+  width: 2.5rem;
+}
+
+.sns img:hover {
+  transform: scale(1.3);
+}
