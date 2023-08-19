@@ -237,3 +237,18 @@ footer div:nth-of-type(2) {
 .sns img:hover {
   transform: scale(1.3);
 }
+
+@media screen and (max-width: 768px) {
+  body {
+    grid-template-columns: 5vw 1fr 5vw;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  nav {
+    font-size: 3rem;
+  }
+  .sec-container a {
+    font-size: 2.5rem;
+  }
+}
