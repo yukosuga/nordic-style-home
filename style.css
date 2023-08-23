@@ -29,7 +29,7 @@ header {
   position: fixed;
   padding: 0.5rem;
   grid-area: header;
-  background-color: #e3e8ec;
+  background-color: #e3ece8;
 }
 
 header div {
@@ -149,7 +149,7 @@ section {
   align-items: center;
   width: 100%;
   grid-area: section;
-  background-color: #e3e8ec;
+  background-color: #e3ece8;
 }
 
 .sec-container {
