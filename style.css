@@ -253,7 +253,7 @@ footer div:nth-of-type(2) {
   }
 
   footer {
-    height: 10vh;
+    height: 12vh;
     background-color: #f6f1ed;
 
     display: flex;
